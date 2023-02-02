@@ -107,16 +107,9 @@ footer ul li {
 .btn {
   background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   border-radius: 3em;
-  /* width: 15rem; */
+  width: 15rem;
   margin: 0 auto;
 }
-/* 
-header {
-  background-image: url(./images/bg-curvy-mobile.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-} */
 
 .header,
 .feature {
@@ -131,8 +124,15 @@ header {
   font-size: 1.5rem;
 }
 
+.intro {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
 .feature {
   padding: 8rem 2rem;
+  max-width: 48rem;
+  display: grid;
 }
 
 .feature-title {
@@ -150,6 +150,7 @@ header {
 
 .team {
   display: grid;
+  margin: 0 auto;
 }
 
 .team-text {
@@ -167,6 +168,10 @@ header {
 
 .team a span {
   padding-left: 0.25rem;
+}
+
+.testimonial {
+  position: relative;
 }
 
 .testimonial-card {
@@ -214,6 +219,8 @@ header {
   box-shadow: 1px 3px 3px hsl(0, 0%, 5%);
   position: relative;
   top: 14rem;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 .email {
@@ -222,8 +229,11 @@ header {
 }
 
 .footer {
-  background-color: var(--bg-footer);
   padding-top: 15rem;
+}
+
+.footer {
+  background-color: var(--bg-footer);
 }
 
 .footer a {
@@ -260,4 +270,101 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form {
+  margin-top: -13rem;
+}
+
+.form-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  max-width: 24rem;
+}
+
+.feature-card {
+  max-height: 21.625rem;
+}
+
+@media (width>=1024px) {
+  .header-title {
+    font-size: 2.25rem;
+  }
+  .feature-card-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .team {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .team-title {
+    font-size: 2rem;
+  }
+
+  .testimonial {
+    padding: 5rem 0 0 0;
+  }
+
+  .testimonial-card-list::before {
+    position: absolute;
+    top: 4.4rem;
+    left: 0.5rem;
+    z-index: -9;
+  }
+
+  .form-sub {
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    align-items: flex-start;
+  }
+  .btn {
+    height: 3.12rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-list-items {
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem 0;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .footer img:nth-child(1) {
+    width: 10%;
+  }
+
+  .footer-address {
+    width: 35%;
+  }
+  .footer-info {
+    width: 20%;
+  }
+  .footer-about {
+    width: 10%;
+  }
+  .footer-contact {
+    width: 10%;
+  }
+  .footer-social {
+    width: 20%;
+  }
+
+  .footer-about-list,
+  .footer-info-tel,
+  .footer-address {
+    padding-top: 0;
+  }
 }

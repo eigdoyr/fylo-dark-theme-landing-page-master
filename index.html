@@ -49,22 +49,24 @@
             <li><a href="#">SignIn</a></li>
           </ul>
         </nav>
-        <img
-          src="./images/illustration-intro.png"
-          alt="Fylo intro illustration"
-        />
+        <div class="intro">
+          <img
+            src="./images/illustration-intro.png"
+            alt="Fylo intro illustration"
+          />
 
-        <h1 class="header-title">
-          All your files in one secure location, accessible anywhere.
-        </h1>
+          <h1 class="header-title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
 
-        <p class="header-lead">
-          Fylo stores all your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends
-          family, and co-workers.
-        </p>
+          <p class="header-lead">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
 
-        <button class="btn" type="button">Get Started</button>
+          <button class="btn" type="button">Get Started</button>
+        </div>
       </header>
 
       <section class="feature container" id="features">
@@ -200,74 +202,78 @@
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-          <label for="email" hidden></label>
-          <input
-            type="email"
-            id="email"
-            class="email"
-            placeholder="email@example.com"
-            required
-          />
-          <button class="btn" type="button">Get Started For Free</button>
+          <div class="form-sub">
+            <label for="email" hidden></label>
+            <input
+              type="email"
+              id="email"
+              class="email"
+              placeholder="email@example.com"
+              required
+            />
+            <button class="btn" type="button">Get Started For Free</button>
+          </div>
         </form>
       </div>
     </section>
-    <footer class="container footer">
-      <div class="footer-container">
+    <footer class="footer">
+      <div class="footer-container container">
         <img class="logo" src="./images/logo.svg" alt="Fylo logo" />
-        <div class="footer-address">
-          <img src="./images/icon-location.svg" alt="" aria-hidden="true" />
-          <a href="#">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </a>
-        </div>
-        <div class="footer-info">
-          <div class="footer-info-tel">
-            <img src="./images/icon-phone.svg" alt="" aria-hidden="true" />
-            <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+        <div class="footer-list-items">
+          <div class="footer-address">
+            <img src="./images/icon-location.svg" alt="" aria-hidden="true" />
+            <a href="#">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </a>
           </div>
-          <div class="footer-info-email">
-            <img src="./images/icon-email.svg" alt="" aria-hidden="true" />
-            <a href="mailto: example@fylo.com">example@fylo.com</a>
+          <div class="footer-info">
+            <div class="footer-info-tel">
+              <img src="./images/icon-phone.svg" alt="" aria-hidden="true" />
+              <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+            </div>
+            <div class="footer-info-email">
+              <img src="./images/icon-email.svg" alt="" aria-hidden="true" />
+              <a href="mailto: example@fylo.com">example@fylo.com</a>
+            </div>
           </div>
-        </div>
-        <div class="footer-about">
-          <ul class="footer-about-list" role="list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <ul class="footer-contact-list">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <ul class="footer-social-list" role="list">
-            <li>
-              <a href="#"
-                ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                <span class="sr-only">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-brands fa-twitter" aria-hidden="true"></i
-                ><span class="sr-only">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-                ><span class="sr-only">Instagram</span></a
-              >
-            </li>
-          </ul>
+          <div class="footer-about">
+            <ul class="footer-about-list" role="list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <ul class="footer-contact-list">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul class="footer-social-list" role="list">
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-twitter" aria-hidden="true"></i
+                  ><span class="sr-only">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+                  ><span class="sr-only">Instagram</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
